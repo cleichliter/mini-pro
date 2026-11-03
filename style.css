@@ -144,6 +144,7 @@ header {
 
 .hero__img--wrapper {
   max-width: 540px;
+  width: 100%;
 }
 
 .hero__description {
@@ -178,7 +179,8 @@ SOCIAL
 */
 
 #about,
-#social {
+#social,
+#contact {
   padding: 24px 0;
   width: 100%;
   max-width: 1200px;
@@ -225,11 +227,12 @@ SOCIAL
 
 .section__img--wrapper {
   padding: 0 24px;
-  width: 30%;
+  width: 40%;
+  flex-shrink: 0;
 }
 
 .section__description--wrapper {
-  width: 70%;
+  width: 60%;
   padding: 0 24px;
 }
 
@@ -237,4 +240,62 @@ SOCIAL
   font-size: 24px;
   line-height: 1.5;
   margin-bottom: 24px;
+}
+
+/* 
+
+CONTACT 
+
+*/
+
+.section__card--contact {
+  border: 1.5px dashed #c321c2;
+  width: 96%;
+  border-radius: 16px;
+}
+
+form {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 24px;
+  gap: 12px;
+}
+
+input, textarea {
+  margin-bottom: 24px;
+  font-size: 20px;
+  padding: 6px 12px;
+  width: 500px;
+  border-radius: 6px;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #badcee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1.5px dashed #cbd5e1;
+  padding: 12px 20px; 
+  border-radius: 20% 20% 0 0;
+}
+
+.footer__logo {
+  margin-bottom: 8px;
+}
+
+.footer__links {
+  margin-bottom: 16px;
+}
+
+.footer__link {
+  padding: 0 16px;
 }
